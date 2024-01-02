@@ -42,42 +42,42 @@ type LanguageData = {
     
   };
 const spaceContorl: LanguageData = {
-  left: 'Sinistra',
-  right: 'destro (masculine) or destra (feminine)',
-  above: 'Sopra',
-  below: 'sotto',
-  beside: 'accanto',
-  front: 'davanti',
-  behind: 'dietro',
-  top: 'superiore',
-  bottom: 'metter il fondo a',
-}
-const everyRoom: LanguageData = {
-  door: 'porta',
-  light: 'leggero (masculine) or leggera (feminine)',
-  desk: 'scrivania',
-  mirror: 'specchio',
-  wardrobe: 'armadio',
-  chair: 'sedia',
-  watch: 'orologio',
-  bed: 'letto (masculine) or letta (feminine)',
-  laptop: 'computer portatile',
-  phone: 'telefono',
-  'side table': 'tavolino',
-  jacket: 'giacca',
-  clothes: 'vestiti',
-}
-const myRoom: LanguageData ={
-  journal: 'rivista',
-  box: 'scatola',
-  pen: 'penna',
-  slider: 'cursore',
-  shoes: 'scarpe',
-  'washing basket': 'cesto per il lavaggio',
-  monster: 'mostro',
-  timer: 'timer',
-  'side table': 'tavolino',
-}
+    left: 'Sinistra',
+    right: 'destro (masculine) or destra (feminine)',
+    above: 'Sopra',
+    below: 'sotto',
+    beside: 'accanto',
+    front: 'davanti',
+    behind: 'dietro',
+    top: 'superiore',
+    bottom: 'metter il fondo a',
+  }
+  const everyRoom: LanguageData = {
+   door: 'porta',
+    light: 'leggero (masculine) or leggera (feminine)',
+    desk: 'scrivania',
+    mirror: 'specchio',
+    wardrobe: 'armadio',
+    chair: 'sedia',
+    watch: 'orologio',
+    bed: 'letto (masculine) or letta (feminine)',
+    laptop: 'computer portatile',
+    phone: 'telefono',
+    'side table': 'tavolino',
+    jacket: 'giacca',
+    clothes: 'vestiti',
+  }
+  const myRoom: LanguageData ={
+    journal: 'rivista',
+    box: 'scatola',
+    pen: 'penna',
+    slider: 'cursore',
+    shoes: 'scarpe',
+    'washing basket': 'cesto per il lavaggio',
+    monster: 'mostro',
+    timer: 'timer',
+    'side table': 'tavolino',
+  }
 
   const numberDate: LanguageData = {
     1: 'uno',
