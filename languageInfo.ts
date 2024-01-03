@@ -1,46 +1,7 @@
 type LanguageData = {
     [key: string]: string;
   };
-  
-  const LanguageData: LanguageData = {
-    quarter: 'trimestre',
-    'quarter to': 'meno un quarto',
-    'quarter past': 'passaggio di un quarto',
-    half: 'avavo',
-    Monday: 'Lunedì',
-    Tuesday: 'Martedì',
-    Wednesday: 'Mercoledì',
-    Thursday: 'Giovedì',
-    Friday: 'Venerdì',
-    Saturday: 'Sabato',
-    Sunday: 'Domenica',
-    January: 'Gennaio',
-    February: 'Febbraio',
-    March: 'Marzo',
-    April: 'aprile',
-    May: 'Maggio',
-    June: 'giugno',
-    July: 'luglio',
-    August: 'agosto',
-    September: 'settembre',
-    October: 'ottobre',
-    November: 'novembre',
-    December: 'dicembre',
-    wallet: 'portafoglio',
-    summer: 'estate',
-    spring: 'primavera',
-    autumn: 'autunno',
-    winter: 'inverno',
-    next: 'prossimo (masculine) or prossima (feminine)',
-    last: 'scorso (masculine) or scorsa (feminine)',
-    firstly: 'in primo luogo',
-    secondly: 'in secondo luogo',
-    yesterday: 'Ieri',
-    tomorrow: 'Domani',
-    now: 'Ora',
-    later: 'Dopo',
-    
-  };
+
 const spaceContorl: LanguageData = {
     left: 'Sinistra',
     right: 'destro (masculine) or destra (feminine)',
@@ -51,7 +12,7 @@ const spaceContorl: LanguageData = {
     behind: 'dietro',
     top: 'superiore',
     bottom: 'metter il fondo a',
-  }
+  };
   const everyRoom: LanguageData = {
    door: 'porta',
     light: 'leggero (masculine) or leggera (feminine)',
@@ -66,7 +27,7 @@ const spaceContorl: LanguageData = {
     'side table': 'tavolino',
     jacket: 'giacca',
     clothes: 'vestiti',
-  }
+  };
   const myRoom: LanguageData ={
     journal: 'rivista',
     box: 'scatola',
@@ -77,8 +38,7 @@ const spaceContorl: LanguageData = {
     monster: 'mostro',
     timer: 'timer',
     'side table': 'tavolino',
-  }
-
+  };
   const numberDate: LanguageData = {
     1: 'uno',
     2: 'due',
@@ -181,5 +141,55 @@ const spaceContorl: LanguageData = {
     99: 'novantanove',
     100: 'cento'
   };
-  
-  export default LanguageData;
+  const dayOfTheWeek : LanguageData = {
+    Monday: 'Lunedì',
+    Tuesday: 'Martedì',
+    Wednesday: 'Mercoledì',
+    Thursday: 'Giovedì',
+    Friday: 'Venerdì',
+    Saturday: 'Sabato',
+    Sunday: 'Domenica',
+  };
+  const session : LanguageData = {
+    January: 'Gennaio',
+    February: 'Febbraio',
+    March: 'Marzo',
+    April: 'aprile',
+    May: 'Maggio',
+    June: 'giugno',
+    July: 'luglio',
+    August: 'agosto',
+    September: 'settembre',
+    October: 'ottobre',
+    November: 'novembre',
+    December: 'dicembre',
+    wallet: 'portafoglio',
+    summer: 'estate',
+    spring: 'primavera',
+    autumn: 'autunno',
+    winter: 'inverno',
+  };
+  const conrolingTime : LanguageData = {
+    'quarter to': 'meno un quarto',
+    'quarter past': 'passaggio di un quarto',
+    half: 'avavo',
+    next: 'prossimo (masculine) or prossima (feminine)',
+    last: 'scorso (masculine) or scorsa (feminine)',
+    firstly: 'in primo luogo',
+    secondly: 'in secondo luogo',
+    yesterday: 'Ieri',
+    tomorrow: 'Domani',
+    now: 'Ora',
+    later: 'Dopo',
+    earlier: 'prima',
+  };
+  const allLanguageData: { [key: string]: LanguageData } = {
+    spaceContorl,
+    everyRoom,
+    myRoom,
+    numberDate,
+    dayOfTheWeek,
+    session,
+    conrolingTime,
+  };
+  export default allLanguageData;

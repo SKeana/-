@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controling your space</title>
+</head>
+<body>
+    <h1> controling you space</h1>
+        <div id="translation"></div>
+        <script src="italian_job/languageInfo.ts"></script>
+        <script>
+            const translation = document.getElementById('translation');
+
+            for (const key in spaceControl) {
+                if (spaceControl.hasOwnProperty(key)){
+                    const translation = spaceControl[key];
+                    translationDiv.innerHTML += '<p><stronge>${key}:</stronge> ${translation}</p>';
+                }
+            }
+        </script>
+    
+</body>
+</html>
