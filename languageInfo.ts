@@ -2,17 +2,7 @@ type LanguageData = {
     [key: string]: string;
   };
 
-const spaceContorl: LanguageData = {
-    left: 'Sinistra',
-    right: 'destro (masculine) or destra (feminine)',
-    above: 'Sopra',
-    below: 'sotto',
-    beside: 'accanto',
-    front: 'davanti',
-    behind: 'dietro',
-    top: 'superiore',
-    bottom: 'metter il fondo a',
-  };
+
   const everyRoom: LanguageData = {
    door: 'porta',
     light: 'leggero (masculine) or leggera (feminine)',
