@@ -1,10 +1,8 @@
-type spaceContorl = {
-    [key: string]: string;
-  };
-
-const spaceContorl: spaceContorl = {
+// this is the list that will have all of the key words for this section
+// controling spacees
+const wordList: { [key: string]: string } = {
     left: 'Sinistra',
-    right: 'destro (masculine) or destra (feminine)',
+    right: 'destro',
     above: 'Sopra',
     below: 'sotto',
     beside: 'accanto',
@@ -13,15 +11,22 @@ const spaceContorl: spaceContorl = {
     top: 'superiore',
     bottom: 'metter il fondo a'
 };
-function displatSpaceControl(){
-    const translationsUl = document.getElementById('translation');
-    if (translationsUl) {
-        translationsUl.innerHTML = '';
-        for (const key in spaceContorl) {
-            const listItem = document.createElement('li');
-            listItem.textContent = '${key}: ${spaceControl[key]}';
-            translationsUl.appendChild(listItem);
-        }
+
+//this is the part that is looking at the list and picking words in 
+//english and italian to be
+
+function getRandomKey(obj: { [key: string]: any }): string {
+    const keys = Object.keys(obj);
+    if (keys.length === 0) {
+      throw new Error(" The obkext is emty.");
     }
-}
-document.addEventListener('DOMContentLoadded', displatSpaceControl);
+    return keys[Math.floor(Math.random() * keys.length)];
+  }
+
+// getting making a str of both words 
+
+const randomEnglishWord: string = getRandomKey(wordList);
+const randomItalianWord: string = wordList[randomEnglishWord];
+
+console.log("English:", randomEnglishWord);
+console.log("Italian:", randomItalianWord);
