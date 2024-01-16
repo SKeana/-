@@ -1,9 +1,4 @@
-type LanguageData = {
-    [key: string]: string;
-  };
-
-
-  const everyRoom: LanguageData = {
+const everyRoom = {
    door: 'porta',
     light: 'leggero (masculine) or leggera (feminine)',
     desk: 'scrivania',
@@ -18,7 +13,7 @@ type LanguageData = {
     jacket: 'giacca',
     clothes: 'vestiti',
   };
-  const myRoom: LanguageData ={
+  const myRoom ={
     journal: 'rivista',
     box: 'scatola',
     pen: 'penna',
@@ -29,7 +24,7 @@ type LanguageData = {
     timer: 'timer',
     'side table': 'tavolino',
   };
-  const numberDate: LanguageData = {
+  const numberDate= {
     1: 'uno',
     2: 'due',
     3: 'tre',
@@ -131,7 +126,7 @@ type LanguageData = {
     99: 'novantanove',
     100: 'cento'
   };
-  const dayOfTheWeek : LanguageData = {
+  const dayOfTheWeek = {
     Monday: 'Lunedì',
     Tuesday: 'Martedì',
     Wednesday: 'Mercoledì',
@@ -140,7 +135,7 @@ type LanguageData = {
     Saturday: 'Sabato',
     Sunday: 'Domenica',
   };
-  const session : LanguageData = {
+  const session = {
     January: 'Gennaio',
     February: 'Febbraio',
     March: 'Marzo',
@@ -159,7 +154,7 @@ type LanguageData = {
     autumn: 'autunno',
     winter: 'inverno',
   };
-  const conrolingTime : LanguageData = {
+  const conrolingTime = {
     'quarter to': 'meno un quarto',
     'quarter past': 'passaggio di un quarto',
     half: 'avavo',
@@ -173,7 +168,7 @@ type LanguageData = {
     later: 'Dopo',
     earlier: 'prima',
   };
-  const allLanguageData: { [key: string]: LanguageData } = {
+  const allLanguageData = {
     spaceContorl,
     everyRoom,
     myRoom,
